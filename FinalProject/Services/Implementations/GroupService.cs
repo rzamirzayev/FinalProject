@@ -55,11 +55,26 @@ namespace FinalProject.Services.Implementations
             {
                 if (group.No.ToLower().Trim() == no.ToLower().Trim())
                 {
-                    group.GroupNumber = groupnumber;
-                    group.No = $"{group.Category.ToString().Substring(0, 1)}{groupnumber}";
-                    Console.WriteLine($"{no} groupu adi {group.No} ile evez olundu");
-                    return "";
+                    foreach (Group group2 in Groups)
+                    {
+                        if (group2.GroupNumber == groupnumber)
+                        {
+                            Console.WriteLine("Bu adda qrup movcuddur");
+                            return " ";
+                        }
+                        else
+                        {
+                            group.GroupNumber = groupnumber;
+                            group.No = $"{group.Category.ToString().Substring(0, 1)}{groupnumber}";
+                            Console.WriteLine($"{no} groupu adi {group.No} ile evez olundu");
+                            return "";
+
+                        }
+                    }
                 }
+                    
+                   
+                
             }
             Console.WriteLine("Duzgun group daxil edin");
             return "";

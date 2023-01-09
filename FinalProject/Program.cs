@@ -3,6 +3,7 @@
 int selection;
 do
 {
+   
     Console.WriteLine("1.Create Group");
     Console.WriteLine("2.GetAll Group");
     Console.WriteLine("3.Edit Group");
@@ -34,7 +35,12 @@ do
             if (selection != 0)
             {
                 Console.WriteLine("Duzgun secim daxil edin");
+                
             }
             break;
+
+
+             
+            
     }
 }while(selection!=0);

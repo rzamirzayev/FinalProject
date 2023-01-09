@@ -20,7 +20,7 @@ namespace FinalProject.Models
         }
         public override string ToString()
         {
-            return $"{FullName} Group:{group}";
+            return $"{FullName} Group:{group.ToUpper()}";
         }
     }
 }

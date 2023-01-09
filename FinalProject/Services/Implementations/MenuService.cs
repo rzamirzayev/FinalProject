@@ -69,7 +69,7 @@ namespace FinalProject.Services.Implementations
             {
                 goto test3;
             }
-            GroupService.EditGroup(groupname, groupnumber);
+            GroupService.EditGroup(groupname.ToLower(), groupnumber);
         }
         public static void GetGroupStudentsMenu()
         {

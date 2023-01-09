@@ -32,7 +32,7 @@ namespace FinalProject.Models
         }
         public override string ToString()
         {
-            return $"{No} Category:{Category} IsOnline:{IsOnline}";
+            return $"{No} Category:{Category} IsOnline:{IsOnline} Number:{students.Count}";
         }
 
 
