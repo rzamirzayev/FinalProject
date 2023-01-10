@@ -17,6 +17,7 @@ do
             MenuService.CreateGroupMenu();
             break;
         case 2:
+
             MenuService.GetAllGroupMenu(); 
             break;
         case 3:

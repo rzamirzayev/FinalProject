@@ -148,6 +148,8 @@ namespace FinalProject.Services.Implementations
                             if (item.students.Count < 15)
                             {
                                 item.students.Add(student);
+                                Console.WriteLine($"{student.FullName} Group:{group} Zemanet:{Type}");
+                                return "";
                             }
                             else
                             {
@@ -159,6 +161,8 @@ namespace FinalProject.Services.Implementations
                             if(item.students.Count < 10)
                             {
                                 item.students.Add(student);
+                                Console.WriteLine($"{student.FullName} Group:{group} Zemanet:{Type}");
+                                return "";
                             }
                             else
                             {
@@ -166,8 +170,7 @@ namespace FinalProject.Services.Implementations
                             }
                         }
 
-                        Console.WriteLine($"{student.FullName} Group:{group} Zemanet:{Type}");
-                        return "";
+                        
                     }
                     else
                     {
