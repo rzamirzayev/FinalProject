@@ -1,6 +1,6 @@
 ﻿using FinalProject.Services.Implementations;
 
-int selection;
+string selection;
 do
 {
    
@@ -10,30 +10,30 @@ do
     Console.WriteLine("4.Get Group's Students");
     Console.WriteLine("5.Get All Student");
     Console.WriteLine("6.Create Student");
-    int.TryParse(Console.ReadLine(), out selection);
+    selection = Console.ReadLine();
     switch (selection)
     {
-        case 1:
+        case "1":
             MenuService.CreateGroupMenu();
             break;
-        case 2:
+        case "2":
 
             MenuService.GetAllGroupMenu(); 
             break;
-        case 3:
+        case "3":
             MenuService.EditGroupMenu();
             break;
-        case 4:
+        case "4":
             MenuService.GetGroupStudentsMenu();
             break;
-        case 5:
+        case "5":
             MenuService.GetAllStudentsMenu();
             break;
-        case 6:
+        case "6":
             MenuService.CreateStudentMenu();
             break;
         default:
-            if (selection != 0)
+            if (selection != "0")
             {
                 Console.WriteLine("Duzgun secim daxil edin");
                 
@@ -44,4 +44,4 @@ do
              
             
     }
-}while(selection!=0);
+}while(selection!="0");
